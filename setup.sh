@@ -1,11 +1,21 @@
 #!/bin/bash
 
+printHelp() {
+  echo "
+  --ip        IP address of ssserver
+  --port      Ssserver port
+  --password  Ssserver password
+  "
+}
+
 while [ "$1" != "" ];
 do
   case "$1" in
     --ip ) IP=$2;shift 2;;
     --port ) PORT=$2;shift 2;;
     --password ) PASS=$2;shift 2;;
+    --help ) echo "$(printHelp)";exit 0;;
+
     * ) break;;
   esac
 done
