@@ -1,0 +1,38 @@
+.input-group {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.input-group input,
+.input-group textarea {
+  width: 100%;
+  min-height: 32px;
+  padding: 0 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  color: #333;
+}
+
+.input-group textarea {
+  padding: 4px 8px;
+}
+
+button {
+  height: 32px;
+  padding: 6px 12px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.input-group input:focus,
+.input-group textarea:focus,
+button:focus {
+  border-color: #333;
+  outline: none;
+}
+
+[data-copied-msg] {
+  display: none;
+}
